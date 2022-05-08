@@ -24,11 +24,13 @@ const Header = () => (
         color="inherit"
         noWrap
         sx={{ flexGrow: 1 }}>
-        <Typography>
-          Мастерская
-        </Typography>
-        <Typography>
-          Желаний
+        <Typography sx={{ fontStyle: 'oblique' }}>
+          <div>
+            Мастерская
+          </div>
+          <div>
+            Желаний
+          </div>
         </Typography> 
       </Typography>
       <Brightness4Icon />

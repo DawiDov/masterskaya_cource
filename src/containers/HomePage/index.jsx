@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router'
 import Paper from '@mui/material/Paper'
-import { Container, Divider, Pagination } from "@mui/material"
+import { Container, Divider, Pagination, Typography } from "@mui/material"
 import PropTypes from 'prop-types'
 
 
@@ -24,9 +24,18 @@ const Home = ({marathonData}) => {
         sx={{
         margin: '20px',
         padding: '20px',
-        borderRadius: '10px'
-      }}
-        >{day}</Paper>)}
+        borderRadius: '10px',
+        backgroundColor: '#d3dec7'
+      }}> 
+        <Typography sx={{ 
+          fontFamily: 'Monospace', 
+          letterSpacing: 4 ,
+          textTransform: 'uppercase',
+          fontWeight: 'bold',
+          }}>
+          {day}
+        </Typography>
+      </Paper>)}
       <Divider sx={{margin: '10px'}}/>
       <Pagination 
         color='primary'
@@ -45,11 +54,11 @@ Home.propTypes = {
 
 Home.defaultProps = {
   marathonData: [
-    'день 1',
-    'день 2',
-    'день 3',
-    'день 4',
-    'дуень 5',
+    'day 1',
+    'day 2',
+    'day 3',
+    'day 4',
+    'day 5',
   ]
 }
 
