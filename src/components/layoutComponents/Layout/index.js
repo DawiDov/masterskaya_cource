@@ -13,7 +13,6 @@ const Layout = () => (
   <header>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-
       <Header />
       <Box
         component="main"
@@ -28,20 +27,10 @@ const Layout = () => (
         }}>
         <Toolbar />
         <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-          <Paper
-            elevation={3}
-            sx={{
-              p: 2,
-              display: 'flex',
-              flexDirection: 'column',
-            }}>
-            <Outlet />
-          </Paper>
+          <Outlet />
         </Container>
       </Box>
     </Box>
-    <CssBaseline />
-    <Footer />
   </header>
 )
 
